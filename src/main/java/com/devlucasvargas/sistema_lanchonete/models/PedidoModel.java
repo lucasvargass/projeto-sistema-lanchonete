@@ -1,5 +1,6 @@
 package com.devlucasvargas.sistema_lanchonete.models;
 
+import com.devlucasvargas.sistema_lanchonete.enums.StatusEnums;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -31,5 +32,6 @@ public class PedidoModel {
     private ClienteModel clienteModel;
 
     private LocalDate dataPedido;
+    private StatusEnums statusEnums;
     private Double valorTotal;
 }
