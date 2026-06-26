@@ -37,12 +37,9 @@ public class ClienteService {
         clienteRepository.save(clienteBase);
     }
 
-    public void excluirCliente(Long id){
-        Optional<ClienteModel> clienteDeletado = clienteRepository.findById(id);
-        if (clienteDeletado.isEmpty()){
-            new RuntimeException("O cliente não foi encontrado!");
-        }else{
-            clienteRepository.deleteById(id);
-        }
+    public void inativarCliente(Long id){
+        ClienteModel clienteInativo = buscarPorId(id);
+        clienteInativo.setAtivo(Boolean.FALSE);
+        clienteRepository.save(clienteInativo);
     }
 }
