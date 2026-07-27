@@ -1,5 +1,4 @@
 package com.devlucasvargas.sistema_lanchonete.service;
-
 import com.devlucasvargas.sistema_lanchonete.models.ClienteModel;
 import com.devlucasvargas.sistema_lanchonete.repository.ClienteRepository;
 import lombok.RequiredArgsConstructor;
