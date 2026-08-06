@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class ItemRequestDTO {
+public class ItemPedidoRequestDTO {
 
     @NotNull(message = "O campo ID do produto é obrigatório!")
     private Long produtoId;

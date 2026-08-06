@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class ItemPedido {
+public class ItemPedidoModel {
 
     private Long id;
 
